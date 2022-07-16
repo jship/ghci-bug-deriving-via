@@ -1,0 +1,24 @@
+name: test-package-d
+version: '0.0.0.0'
+copyright: 2022 (c) Jason Shipman
+author: "Jason Shipman"
+maintainer: "Jason Shipman"
+synopsis: test-package-d synopsis
+description: test-package-d description
+category: Data
+
+extra-source-files:
+- package.yaml
+
+ghc-options:
+  - -Wall
+  - -fwarn-tabs
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
+
+library:
+  dependencies:
+  - base
+  - transformers
+  source-dirs: library
+
